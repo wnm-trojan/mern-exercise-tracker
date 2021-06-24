@@ -4,7 +4,7 @@
  * Description: User route
  */
 const router = require('express').Router();
-let User = require('../model/user.model');
+let User = require('../models/user.model');
 
 router.route('/').get((req, res) => {
     User.find()

@@ -4,7 +4,7 @@
  * Description: Exercise route
  */
 const router = require('express').Router();
-let Exercise = require('../model/exercise.model');
+let Exercise = require('../models/exercise.model');
 
 router.route('/').get((req, res) => {
     Exercise.find()
